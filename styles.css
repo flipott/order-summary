@@ -1,0 +1,113 @@
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    font-size: 16px;
+
+    /* 500, 700, 900  */
+}
+
+body {
+    background: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+.banner img{
+    height: 220px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.banner ~ div {
+    padding: 15px;
+}
+
+.title {
+    align-self: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
+
+.description {
+    margin: 0 30px;
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+
+.plan {
+    display: flex;
+    justify-content: space-around;
+    background: var(--very-pale-blue);
+    width: 75%;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.price-title {
+    color: var(--dark-blue);
+    font-weight: 700;    
+}
+
+.price-number {
+    color: var(--desaturated-blue);
+}
+
+.change {
+    align-self: center;
+    font-weight: 700;
+}
+
+.change a:hover {
+    text-decoration: none;
+}
+
+.payment-button {
+    align-self: center;
+    width: 83%;
+}
+
+#payment {
+    border-radius: 15px;
+    border: none;
+    height: 50px;
+    align-self: center;
+    background: var(--bright-blue);
+    color: white;
+    font-weight: 900;
+    width: 100%;
+}
+
+#payment:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.cancel {
+    align-self: center;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+}
+
+.cancel:hover {
+    color: black;
+    cursor:pointer;
+}
